@@ -1,0 +1,2 @@
+$df = "SELECT DISTINCT product.name FROM product INNER JOIN product_cat ON product.id = product_cat.product_id WHERE product_cat.category_id IN (1, 2)";
+$sql = "SELECT DISTINCT categories.category_name FROM categories INNER JOIN product_cat ON categories.id = product_cat.category_id WHERE product_cat.product_id=1";
